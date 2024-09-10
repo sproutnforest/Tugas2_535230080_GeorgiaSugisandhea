@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="operations.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <div class="top">First Number<input type="number" id="first"></div>
+        <div class="bottom">Second Number<input type="number" id="second"></div>
+        <div class="result">Result<input type="text" id="res" readonly></div>
+        <div class="buttons">
+            <button type="button" id="operator" onclick='addition(document.getElementById("first").value, document.getElementById("second").value)'>+</button>
+            <button type="button" id="operator" onclick='substract(document.getElementById("first").value, document.getElementById("second").value)'>-</button> 
+            <button type="button" id="operator" onclick='multiply(document.getElementById("first").value, document.getElementById("second").value)'>x</button>
+            <button type="button" id="operator" onclick='division(document.getElementById("first").value, document.getElementById("second").value)'>/</button>
+        </div>
+    </div>
+</body>
+</html>

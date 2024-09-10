@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>535230080_Konversi Nilai</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function converse(num){
+            document.getElementById("convresult").innerHTML = "Hasil Konversi Nilai:";
+            if(num<=40){
+                document.getElementById("convresult").innerHTML += "  E";
+            }
+            else if(num<=55){
+                document.getElementById("convresult").innerHTML += "  D";
+            }
+            else if(num<=70){
+                document.getElementById("convresult").innerHTML += "  C";
+            }
+            else if(num<=80){
+                document.getElementById("convresult").innerHTML += "  B";
+            }
+            else{
+                document.getElementById("convresult").innerHTML += "  A";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="mid">
+        <div class="up">
+            <input type="number" id="num" placeholder="Nilai Angka">
+            <button type="button" id="converter" onclick='converse(document.getElementById("num").value)'>Convert</button>
+        </div>
+        <div class="down">
+            <p id="convresult"></p>
+        </div>
+    </div>
+</body>
+</html>

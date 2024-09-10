@@ -1,0 +1,45 @@
+/*
+#FF7F11 - orange
+#FF1B1C - red
+#7FEFBD - aquamarine
+#22577A - lapis lazulli
+#7D84B2 - cool gray
+*/
+body{
+    background-color: #7D84B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    background-color: #22577A;
+    padding: 50px;
+    gap: 15px;
+}
+.down{
+    display: flex;
+    align-items: center;
+    background-color: #FF7F11;
+    border-radius: 2%;
+    height: 40px;
+}
+#num{
+    height: 25.5px;
+}
+#converter{
+    border: none;
+    width: 70px;
+    height: 30px;
+    background-color: #7D84B2;
+}
+#converter:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
+}
+#convresult{
+    margin: 7px;
+}
