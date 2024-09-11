@@ -9,10 +9,20 @@
 body {
     background-color: #5755FE;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+.up{
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFF7FC;
+}
+.caption{
+    padding-bottom: 20px;
+    color: #FFF7FC;
 }
 .calc{
     background-color: #8B93FF;
